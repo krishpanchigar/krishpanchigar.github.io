@@ -1,0 +1,139 @@
+body {
+    font-family: Georgia, serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.primary {
+    color: #ebf5ff;
+}
+
+.accent {
+    color: #35a4ff;
+}
+
+.container{
+    padding: 20px;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #35a4ff;
+}
+
+.hero-image {
+    /* Set the height to full viewport height */
+    height: 100vh;
+    /* Set the background image and position */
+    background-image: url('../images/home-bg.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Make the background image cover the entire container */
+    background-size: cover;
+    /* Add a black tint to the background image */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    /* Center the text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero {
+    color: white;
+}
+
+.profile-pic{
+    width: 50%;
+}
+
+.about-text{
+    padding-top: 10%;
+}
+
+
+.skill-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 1px;
+    transition: transform 0.3s ease;
+}
+.skill-card:hover {
+    background-color: #35a4ff;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+}
+
+.project-card {
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+.linkedin-button {
+    color: var(--bs-primary); /* Bootstrap's primary color variable */
+}
+
+.form-control {
+    transition: box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 5px #35a4ff;
+}
+
+.submit-button:hover {
+    background-color: #fff; /* White background */
+    border-color: var(--bs-primary); /* Bootstrap's primary color variable */
+    color: var(--bs-primary);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+/* CSS for mobile devices */
+@media (max-width: 767px) {
+    body {
+        text-align: center;
+    }
+}
+
+/* CSS for larger screens */
+@media (min-width: 768px) {
+    body {
+        text-align: left;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+
+    .profile-pic{
+        margin-right: 0;
+    }
+    .about-text{
+        padding-right: 25%;
+    }
+
+}
+
